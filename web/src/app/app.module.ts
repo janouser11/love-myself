@@ -9,6 +9,7 @@ import { CampaignComponent } from './components/pages/campaign/campaign.componen
 import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { StandardComponentComponent } from './components/standard-component/standard-component.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -34,6 +35,7 @@ const appRoutes: Routes = [
     PageNotFoundComponent,
     HeaderComponent,
     FooterComponent,
+    StandardComponentComponent,
   ],
   imports: [
     BrowserModule,

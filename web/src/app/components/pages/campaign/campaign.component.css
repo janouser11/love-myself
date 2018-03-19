@@ -1,0 +1,13 @@
+.campaign-container {
+  padding-top: 100px;
+}
+
+.group {
+  padding: 50px 150px;
+  display: flex;
+  align-items: center;
+}
+
+.group-image {
+  width: 900px;
+}
