@@ -1,26 +1,26 @@
-a {text-decoration:none;}
-
-.header { 
-    background-color: #7be9c2;
-    border: 1px solid #7be9c2;
-    text-align: center;
-
-    padding: 8px;
-    position: fixed;
-    top: 0;
-    width:100%;
-
+a {
+  text-decoration: none;
 }
 
-.text{
-    vertical-align: middle;
-    font-family: 'Nunito', sans-serif;
-    font-style: normal;
-    font-weight: 400;
+.header {
+  background-color: #7be9c2;
+  border: 1px solid #7be9c2;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.header a{
-    color: white;
-    margin: 30px;
-    padding-left: -15px;
-} 
+.text {
+  vertical-align: middle;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.header a {
+  color: white;
+  margin: 30px;
+  padding-left: -15px;
+}

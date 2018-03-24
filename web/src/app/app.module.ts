@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from './components/pages/page-not-found/page-no
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { StandardComponentComponent } from './components/standard-component/standard-component.component';
+import { Subscription } from 'rxjs/Subscription';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
     path: 'documentation',
     component: DocumentationComponent
   },
-  { path: 'campaigns', component: CampaignComponent
+  {
+    path: 'campaigns', component: CampaignComponent
   },
   { path: '**', component: PageNotFoundComponent }
 ];
