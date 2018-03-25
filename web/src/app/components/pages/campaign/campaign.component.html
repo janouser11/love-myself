@@ -1,72 +1,13 @@
 <app-standard-component>
 
-  <!-- <div class="campaign-container">
-    <div class="group">
-      <div class="group-image">
-        <img src="./../../../../assets/images/day-1.svg" alt="day1">
+  <ngx-carousel class="banner" [inputs]="carouselBanner" (carouselLoad)="carouselBannerLoad()">
+    <ngx-item NgxCarouselItem *ngFor="let tile of carouselBannerItems; let i = index;">
+      <div class="bannerStyle" [style.background]="'url(' + tile + ')'">
+        <h1>.</h1>
       </div>
-      <div class="group-text">
-        <p>
-          Accept and love yourself for who you are. It’s okay to not be okay, and it’s okay to ask for help. Be grateful for the good
-          experiences and learn from the bad ones. This is a day of asking yourself who you are and how you have gotten to
-          this place in your life.
-        </p>
-      </div>
-    </div>
-    <div class="group">
-      <div class="group-image">
-        <img src="./../../../../assets/images/day-2.svg" alt="day2">
-      </div>
-      <div class="group-text">
-        <p>
-          Forgive yourself or others of any mistakes and stepping forward. Resolve your conflicts, balance your giving and receiving,
-          and look at the bigger picture. This is a day of moving forward, removing yourself from toxic situations and people,
-          and becoming more secure in who you are and the things you have done.
-        </p>
-      </div>
-    </div>
-    <div class="group">
-      <div class="group-image">
-        <img src="./../../../../assets/images/day-3.svg" alt="day3">
-      </div>
-      <div class="group-text">
-        <p>
-          Acknowledge or discover your potential. Be your biggest supporter and realize that you are your own life partner. Everyone
-          has their own strengths and weaknesses. This is a day to validate your feelings and learn what you really strive
-          with in life.
-        </p>
-      </div>
-    </div>
-    <div class="group">
-      <div class="group-image">
-        <img src="./../../../../assets/images/day-4.svg" alt="day4">
-      </div>
-      <div class="group-text">
-        <p>
-          Learn to not be so hard on yourself. It’s important to respect each step and your will to grow. Instead of setting one bar
-          that seems impossible to reach, set a few and climb the ladder. This is a day to work toward being the best you
-          and not someone else’s vision of you. Acknowledge your desires, connect with others, and give yourself time.
-        </p>
-      </div>
-    </div>
-    <div class="group">
-      <div class="group-image">
-        <img src="./../../../../assets/images/day-5.svg" alt="day5">
-      </div>
-      <div class="group-text">
-        <p>
-          Appreciate and express yourself and take the time to do things that you like to do. Be comfortable with saying no to things
-          you don’t like, respect your time and experiences. The more confident you become in yourself the more confidence
-          you will radiate to the world.
-        </p>
-      </div>
-    </div>
-  </div> -->
-
-
-  <!-- <mat-tab-group>
-    <mat-tab label="Tab 1">Content 1</mat-tab>
-    <mat-tab label="Tab 2">Content 2</mat-tab>
-  </mat-tab-group> -->
+    </ngx-item>
+    <button NgxCarouselPrev class="leftRs">&lt;</button>
+    <button NgxCarouselNext class="rightRs">&gt;</button>
+  </ngx-carousel>
 
 </app-standard-component>

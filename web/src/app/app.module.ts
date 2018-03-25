@@ -11,6 +11,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { StandardComponentComponent } from './components/standard-component/standard-component.component';
 import { Subscription } from 'rxjs/Subscription';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxCarouselModule } from 'ngx-carousel';
+import 'hammerjs';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -41,6 +45,9 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    NoopAnimationsModule,
+    NgxCarouselModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
