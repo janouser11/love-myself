@@ -1,20 +1,7 @@
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin: 0 0 150px;
-}
-
 .footer {
   background-color: #7be9c2;
-  position: block;
-  left: 0;
-  bottom: 0;
   height: 150px;
   width: 100%;
-  padding-top: 10px;
 }
 
 .footer-text {

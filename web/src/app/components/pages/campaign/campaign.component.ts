@@ -10,7 +10,8 @@ export class CampaignComponent implements OnInit {
 
   images: string[];
 
-  public carouselBannerItems: Array<any> = ['assets/images/accepting.svg',
+  public carouselBannerItems: Array<any> = [
+    'assets/images/accepting.svg',
     'assets/images/forgiving.svg',
     'assets/images/believing.svg',
     'assets/images/encouraging.svg',
@@ -32,8 +33,7 @@ export class CampaignComponent implements OnInit {
       grid: { xs: 1, sm: 1, md: 1, lg: 1, all: 0 },
       slide: 4,
       speed: 500,
-      interval: 1000,
-      loop: true,
+      interval: 800,
       point: {
         visible: true,
         pointStyles: `
@@ -46,7 +46,7 @@ export class CampaignComponent implements OnInit {
             overflow: auto;
             position: absolute;
             width: 100%;
-            bottom: 20px;
+            bottom: 0px;
             left: 0;
             box-sizing: border-box;
           }
@@ -54,8 +54,9 @@ export class CampaignComponent implements OnInit {
             display: inline-block;
             border-radius: 999px;
             background: #7be9c2;
-            padding: 5px;
-            margin: 0 3px;
+            width: 0px;
+            padding: 8px;
+            margin: 0 5px;
             transition: .4s ease all;
           }
           .ngxcarouselPoint li.active {
@@ -67,7 +68,7 @@ export class CampaignComponent implements OnInit {
       load: 2,
       custom: 'banner',
       touch: true,
-      // loop: false,
+      loop: false,
       easing: 'cubic-bezier(0, 0, 0.2, 1)'
     };
 

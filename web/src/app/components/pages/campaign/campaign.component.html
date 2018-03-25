@@ -1,13 +1,39 @@
-<app-standard-component>
+<div class="header">
+  <nav>
+    <div class="text">
+      <a routerLink="/" routerLinkActive="active">Home</a>
+      <a routerLink="/mission" routerLinkActive="active">Mission</a>
 
-  <ngx-carousel class="banner" [inputs]="carouselBanner" (carouselLoad)="carouselBannerLoad()">
-    <ngx-item NgxCarouselItem *ngFor="let tile of carouselBannerItems; let i = index;">
-      <div class="bannerStyle" [style.background]="'url(' + tile + ')'">
-        <h1>.</h1>
-      </div>
-    </ngx-item>
-    <button NgxCarouselPrev class="leftRs">&lt;</button>
-    <button NgxCarouselNext class="rightRs">&gt;</button>
-  </ngx-carousel>
+      <!-- <a routerLink="/documentation" routerLinkActive="active">Documentation</a> -->
+      <a routerLink="/campaigns" routerLinkActive="active">Campaigns</a>
+    </div>
+  </nav>
 
-</app-standard-component>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+  </head>
+</div>
+
+<ngx-carousel class="banner" [inputs]="carouselBanner" (carouselLoad)="carouselBannerLoad()">
+  <ngx-item NgxCarouselItem *ngFor="let tile of carouselBannerItems; let i = index;">
+    <div class="bannerStyle" [style.background]="'url(' + tile + ')'">
+    </div>
+  </ngx-item>
+  <button NgxCarouselPrev class="leftRs">
+    <img src="./../../../../assets/images/arrow-backward.svg" alt="l-arrow" class="arrow">
+  </button>
+  <button NgxCarouselNext class="rightRs">
+    <img src="./../../../../assets/images/arrow-forward.svg" alt="r-arrow" class="arrow">
+  </button>
+</ngx-carousel>
+
+<div class="footer">
+  <div class="footer-text">
+    <a href="https://www.facebook.com/lovemyselfprj/">
+      <img src="assets/images/facebook.svg" alt="fbicon" class="facebook-icon">
+    </a>
+    <a href="https://www.instagram.com/lovemyselfprj/">
+      <img src="assets/images/instagram.svg" alt="instaicon" class="instagram-icon">
+    </a>#LOVEMYSELFPRJ
+  </div>
+</div>
