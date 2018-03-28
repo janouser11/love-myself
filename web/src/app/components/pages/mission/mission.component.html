@@ -41,13 +41,19 @@
       </span>
     </div>
 
-    <div class="campaign">
-      <img src="./../../../../assets/images/campaigns.svg" alt="campaign">
-      <div class="view-more">
-        <a routerLink="/campaigns" routerLinkActive="active">VIEW MORE</a>
+    <ngx-carousel class="banner" [inputs]="carouselBanner">
+      <ngx-item NgxCarouselItem *ngFor="let tile of carouselBannerItems; let i = index;">
+        <div class="bannerStyle" [style.background]="'url(' + tile + ')'">
+        </div>
+      </ngx-item>
+      <button NgxCarouselPrev class="leftRs">
+        <img src="./../../../../assets/images/arrow-backward.svg" alt="l-arrow" class="arrow">
+      </button>
+      <button NgxCarouselNext class="rightRs">
         <img src="./../../../../assets/images/arrow-forward.svg" alt="r-arrow" class="arrow">
-      </div>
-    </div>
+      </button>
+    </ngx-carousel>
+
   </div>
 
 

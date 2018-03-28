@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { MissionComponent } from './components/pages/mission/mission.component';
 import { DocumentationComponent } from './components/pages/documentation/documentation.component';
-import { CampaignComponent } from './components/pages/campaign/campaign.component';
+import { ResearchComponent } from './components/pages/research/research.component';
 import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -19,13 +19,8 @@ import 'hammerjs';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'mission', component: MissionComponent },
-  {
-    path: 'documentation',
-    component: DocumentationComponent
-  },
-  {
-    path: 'campaigns', component: CampaignComponent
-  },
+  { path: 'documentation', component: DocumentationComponent },
+  { path: 'research', component: ResearchComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -37,7 +32,7 @@ const appRoutes: Routes = [
     HomeComponent,
     MissionComponent,
     DocumentationComponent,
-    CampaignComponent,
+    ResearchComponent,
     PageNotFoundComponent,
     HeaderComponent,
     FooterComponent,
