@@ -3,7 +3,7 @@
   padding: 80px;
 }
 
-.logo-header {
+.logo-header-horizontal {
   width: 70%;
   margin: auto;
   display: block;
@@ -11,7 +11,12 @@
   padding-bottom: 80px;
 }
 
+.logo-header-vertical {
+  display: none;
+}
+
 .dates {
+  font-size: 20px;
   text-align: center;
   font-family: 'Nunito', sans-serif;
   font-style: normal;
@@ -100,4 +105,31 @@
 
 .arrow {
   margin-top: 5px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  .divider {
+    margin-top: 50px;
+  }
+  .mission {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  .logo-header-horizontal {
+    display: none;
+  }
+  .logo-header-vertical {
+    display: block;
+    width: 100%;
+    padding-top: 40px;
+  }
+  .bannerStyle {
+    background-size: cover !important;
+    height: 200px;
+    margin-top: 10px;
+  }
 }

@@ -1,6 +1,5 @@
 .footer {
   background-color: #7be9c2;
-  height: 150px;
   width: 100%;
 }
 
@@ -18,15 +17,32 @@
 }
 
 .facebook-icon {
-  width: 3%;
-  position: absolute;
-  top: 35%;
-  left: 44%;
+  width: 4%;
+  vertical-align: middle;
 }
 
 .instagram-icon {
-  width: 3%;
-  position: absolute;
-  top: 35%;
-  left: 41%;
+  width: 4%;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  .footer-text {
+    padding-left: 40px;
+    text-align: center;
+    padding: 40px;
+  }
+  .facebook-icon {
+    width: 15%;
+    vertical-align: middle;
+  }
+  .instagram-icon {
+    width: 15%;
+    vertical-align: middle;
+  }
 }
