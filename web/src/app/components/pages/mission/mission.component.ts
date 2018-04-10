@@ -18,16 +18,30 @@ export class MissionComponent implements OnInit {
     'assets/images/expressing.svg'];
   public carouselBanner: NgxCarousel;
 
-  constructor() { }
+  innerWidth: number;
+
+  constructor() {
+    this.innerWidth = (window.screen.width);
+  }
 
   ngOnInit() {
-    this.images = [
-      'assets/images/accepting.svg',
-      'assets/images/forgiving.svg',
-      'assets/images/believing.svg',
-      'assets/images/encouraging.svg',
-      'assets/images/expressing.svg'
-    ];
+
+    if (this.innerWidth < 300) {
+      this.carouselBannerItems = [
+        'assets/images/accepting-mobile.svg',
+        'assets/images/forgiving-mobile.svg',
+        'assets/images/believing-mobile.svg',
+        'assets/images/encouraging-mobile.svg',
+        'assets/images/expressing-mobile.svg']
+
+    } else {
+      this.carouselBannerItems = [
+        'assets/images/accepting.svg',
+        'assets/images/forgiving.svg',
+        'assets/images/believing.svg',
+        'assets/images/encouraging.svg',
+        'assets/images/expressing.svg']
+    }
 
     this.carouselBanner = {
       grid: { xs: 1, sm: 1, md: 1, lg: 1, all: 0 },

@@ -15,15 +15,6 @@
   display: none;
 }
 
-.dates {
-  font-size: 20px;
-  text-align: center;
-  font-family: 'Nunito', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  color: #eef4f3;
-}
-
 .divider {
   margin-top: 80px;
   width: 100%;
