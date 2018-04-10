@@ -15,23 +15,6 @@
   display: none;
 }
 
-.divider {
-  margin-top: 80px;
-  width: 100%;
-  height: 8px;
-  border-bottom: 15px solid #7be9c2;
-  text-align: center;
-}
-
-.divider-text {
-  font-size: 25px;
-  background-color: #eef4f3;
-  padding: 15px;
-  font-family: 'Nunito', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-}
-
 .mission {
   color: #606060;
   margin: 70px 200px;
@@ -56,6 +39,8 @@
   font-weight: 600;
   color: #606060;
 }
+
+/* carousel */
 
 .bannerStyle {
   background-size: cover !important;
@@ -120,7 +105,7 @@
   }
   .bannerStyle {
     background-size: cover !important;
-    height: 200px;
+    height: 400px;
     margin-top: 10px;
   }
 }

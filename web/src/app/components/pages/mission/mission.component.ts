@@ -10,13 +10,9 @@ export class MissionComponent implements OnInit {
 
   images: string[];
 
-  public carouselBannerItems: Array<any> = [
-    'assets/images/accepting.svg',
-    'assets/images/forgiving.svg',
-    'assets/images/believing.svg',
-    'assets/images/encouraging.svg',
-    'assets/images/expressing.svg'];
+  public carouselBannerItems: Array<any> = [];
   public carouselBanner: NgxCarousel;
+  public carouselWidth: number = 500;
 
   innerWidth: number;
 
@@ -24,24 +20,12 @@ export class MissionComponent implements OnInit {
     this.innerWidth = (window.screen.width);
   }
 
+  onResize(event) {
+    this.determineCarouselBannerItems(event.target.innerWidth);
+  }
+
   ngOnInit() {
-
-    if (this.innerWidth < 300) {
-      this.carouselBannerItems = [
-        'assets/images/accepting-mobile.svg',
-        'assets/images/forgiving-mobile.svg',
-        'assets/images/believing-mobile.svg',
-        'assets/images/encouraging-mobile.svg',
-        'assets/images/expressing-mobile.svg']
-
-    } else {
-      this.carouselBannerItems = [
-        'assets/images/accepting.svg',
-        'assets/images/forgiving.svg',
-        'assets/images/believing.svg',
-        'assets/images/encouraging.svg',
-        'assets/images/expressing.svg']
-    }
+    this.determineCarouselBannerItems(this.innerWidth);
 
     this.carouselBanner = {
       grid: { xs: 1, sm: 1, md: 1, lg: 1, all: 0 },
@@ -87,4 +71,23 @@ export class MissionComponent implements OnInit {
     };
 
   }
+  determineCarouselBannerItems(width: number) {
+    if (width < this.carouselWidth) {
+      this.carouselBannerItems = [
+        'assets/images/accepting-mobile.svg',
+        'assets/images/forgiving-mobile.svg',
+        'assets/images/believing-mobile.svg',
+        'assets/images/encouraging-mobile.svg',
+        'assets/images/expressing-mobile.svg']
+
+    } else {
+      this.carouselBannerItems = [
+        'assets/images/accepting.svg',
+        'assets/images/forgiving.svg',
+        'assets/images/believing.svg',
+        'assets/images/encouraging.svg',
+        'assets/images/expressing.svg']
+    }
+  }
+
 }
