@@ -1,0 +1,45 @@
+.not-found {
+  background-color: #7be9c2;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+.nf-graphic {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 50%;
+  max-height: 100%;
+}
+
+.wrapper {
+  text-align: center;
+  padding-top: 600px;
+}
+
+.button {
+  background-color: #eef4f3;
+  width: 20%;
+  padding: 10px 32px;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #7be9c2;
+  font-size: 15px;
+}
+
+body * {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}

@@ -15,15 +15,6 @@
   display: none;
 }
 
-.mission {
-  color: #606060;
-  margin: 70px 200px;
-  font-size: 15px;
-  font-family: 'PT Serif', serif;
-  font-style: normal;
-  font-weight: 400;
-}
-
 .campaign {
   width: 90%;
   margin: auto;
@@ -51,8 +42,8 @@
 .bannerStyle img {
   margin: 0 auto;
   display: block;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto;
+  width: 50%;
 }
 
 .leftRs {
@@ -90,10 +81,11 @@
   .divider {
     margin-top: 50px;
   }
-  .mission {
+  .body-text {
     width: 70%;
     margin: 0 auto;
     padding-top: 30px;
+    font-size: 12px;
   }
   .logo-header-horizontal {
     display: none;
@@ -105,7 +97,10 @@
   }
   .bannerStyle {
     background-size: cover !important;
-    height: 400px;
+    height: 350px;
     margin-top: 10px;
+  }
+  .banner {
+    padding-bottom: 50px;
   }
 }

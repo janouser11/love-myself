@@ -26,3 +26,22 @@ html {
   font-style: normal;
   font-weight: 600;
 }
+
+.body-text {
+  color: #606060;
+  margin: 70px 200px;
+  font-size: 15px;
+  font-family: 'PT Serif', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  .divider {
+    border-bottom: 10px solid #7be9c2;
+  }
+  .divider-text {
+    font-size: 20px;
+  }
+}

@@ -12,7 +12,7 @@ export class MissionComponent implements OnInit {
 
   public carouselBannerItems: Array<any> = [];
   public carouselBanner: NgxCarousel;
-  public carouselWidth: number = 500;
+  public carouselWidth: number = 800;
 
   innerWidth: number;
 
