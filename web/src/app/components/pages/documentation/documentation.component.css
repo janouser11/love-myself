@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  padding-bottom: 10px;
 }
 
 img {
@@ -19,6 +20,10 @@ img {
 .column img {
   margin-top: 4px;
   vertical-align: middle;
+}
+
+.body-text {
+  padding-bottom: 0px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
