@@ -39,6 +39,7 @@
         CAMPAIGNS
       </span>
     </div>
+
     <div (window:resize)="onResize($event)"></div>
     <ngx-carousel class="banner" [inputs]="carouselBanner">
       <ngx-item NgxCarouselItem *ngFor="let tile of carouselBannerItems; let i = index;">

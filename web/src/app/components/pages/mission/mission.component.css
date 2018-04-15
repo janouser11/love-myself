@@ -15,22 +15,6 @@
   display: none;
 }
 
-.campaign {
-  width: 90%;
-  margin: auto;
-  display: block;
-  padding: 30px;
-}
-
-.campaign a {
-  text-decoration: none;
-  font-size: 15px;
-  font-family: 'Nunito', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  color: #606060;
-}
-
 /* carousel */
 
 .bannerStyle {

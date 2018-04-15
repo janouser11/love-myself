@@ -27,6 +27,24 @@ html {
   font-weight: 600;
 }
 
+.divider-two {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 25%;
+  height: 15px;
+  border-bottom: 5px solid #7be9c2;
+  text-align: center;
+}
+
+.divider-two-text {
+  font-size: 25px;
+  background-color: #eef4f3;
+  padding: 15px;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
 .body-text {
   color: #606060;
   margin: 70px 200px;
