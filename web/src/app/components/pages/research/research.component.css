@@ -5,19 +5,18 @@ a {
 
 .row {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .imagecolumn {
+  width: 80%;
+}
+
+.fullimagecolumn {
   width: 100%;
 }
 
-.row,
-.row>.column {
-  padding: 50px;
-}
-
-/* Create three equal columns that floats next to each other */
+/* Create three equal columns that float next to each other */
 
 .column {
   float: left;
@@ -35,12 +34,10 @@ a {
 /* Content */
 
 .content {
-  background-color: white;
-  padding: 5px;
+  /* background-color: white; */
+  padding: 10px;
   text-align: center;
-  font-family: 'Nunito', sans-serif;
-  font-style: normal;
-  font-weight: 600;
+  font-family: 'PT Serif', serif;
   font-size: 15px;
 }
 
