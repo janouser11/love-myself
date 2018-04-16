@@ -3,42 +3,30 @@ a {
   color: black;
 }
 
-.row {
+.image-card {
+  max-width: 450px;
+  border: 30px solid white;
+}
+
+mat-card-title {
+  margin-bottom: 0px !important;
+  font-weight: bold;
+}
+
+.title {
+  margin-top: 30px;
+  padding: 20px;
+  border-top: 5px solid #7be9c2;
+  border-bottom: 5px solid #7be9c2;
+}
+
+.project-reference {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.imagecolumn {
-  width: 80%;
-}
-
-.fullimagecolumn {
-  width: 100%;
-}
-
-/* Create three equal columns that float next to each other */
-
-.column {
-  float: left;
-  width: 30%;
-}
-
-/* Clear floats after rows */
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-
-.content {
-  /* background-color: white; */
-  padding: 10px;
-  text-align: center;
-  font-family: 'PT Serif', serif;
-  font-size: 15px;
+.premise-container {
+  margin-top: 80px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
+import { MatCardModule } from '@angular/material';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -40,6 +41,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    MatCardModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
     NgxCarouselModule,
