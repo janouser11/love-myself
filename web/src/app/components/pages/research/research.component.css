@@ -25,8 +25,22 @@ mat-card-title {
   justify-content: space-evenly;
 }
 
+.examples {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .premise-container {
   margin-top: 80px;
+}
+
+.fullimage {
+  padding-top: 3%;
+}
+
+.tanabata {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
