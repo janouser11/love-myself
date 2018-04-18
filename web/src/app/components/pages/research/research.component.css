@@ -5,7 +5,7 @@ a {
 
 .image-card {
   max-width: 450px;
-  border: 30px solid white;
+  border: 30px solid #eef4f3;
 }
 
 mat-card-title {
@@ -36,11 +36,16 @@ mat-card-title {
 
 .fullimage {
   padding-top: 3%;
+  padding-left: 8%;
 }
 
 .tanabata {
   display: flex;
   justify-content: space-evenly;
+}
+
+.right {
+  padding-right: 8%;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

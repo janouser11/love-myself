@@ -38,7 +38,7 @@ html {
 
 .divider-two-text {
   font-size: 25px;
-  background-color: white;
+  background-color: #eef4f3;
   padding: 15px;
   font-family: 'Nunito', sans-serif;
   font-style: normal;
@@ -56,7 +56,7 @@ html {
 
 mat-card {
   box-shadow: none !important;
-  background: white;
+  background: #eef4f3;
   width: 100%;
   margin-top: 30px;
   box-sizing: border-box;

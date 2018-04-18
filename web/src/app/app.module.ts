@@ -6,6 +6,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { MissionComponent } from './components/pages/mission/mission.component';
 import { DocumentationComponent } from './components/pages/documentation/documentation.component';
 import { ResearchComponent } from './components/pages/research/research.component';
+import { DevelopmentComponent } from './components/pages/development/development.component';
 import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -22,6 +23,7 @@ const appRoutes: Routes = [
   { path: 'mission', component: MissionComponent },
   { path: 'documentation', component: DocumentationComponent },
   { path: 'research', component: ResearchComponent },
+  { path: 'development', component: DevelopmentComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -34,6 +36,7 @@ const appRoutes: Routes = [
     MissionComponent,
     DocumentationComponent,
     ResearchComponent,
+    DevelopmentComponent,
     PageNotFoundComponent,
     HeaderComponent,
     FooterComponent,
