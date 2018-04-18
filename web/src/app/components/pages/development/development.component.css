@@ -1,0 +1,13 @@
+.goals-container {
+  margin-top: 100px;
+}
+
+.lists {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.lists mat-card-content {
+  margin-left: 150px !important;
+  margin-right: 100px !important;
+}
