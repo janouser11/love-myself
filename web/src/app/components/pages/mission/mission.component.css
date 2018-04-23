@@ -1,18 +1,31 @@
 .container {
   background-color: #7be9c2;
-  padding: 80px;
+  /* padding: 80px; */
+  height: calc(100vh);
+  position: relative
 }
 
 .logo-header-horizontal {
   width: 70%;
-  margin: auto;
-  display: block;
-  padding-top: 100px;
-  padding-bottom: 80px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .logo-header-vertical {
   display: none;
+}
+
+.scroll {
+  width: 8%;
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* carousel */
