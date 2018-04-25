@@ -3,23 +3,6 @@ a {
   color: black;
 }
 
-.image-card {
-  max-width: 450px;
-  border: 30px solid #eef4f3;
-}
-
-mat-card-title {
-  margin-bottom: 0px !important;
-  font-weight: bold;
-}
-
-.title {
-  margin-top: 30px;
-  padding: 20px;
-  border-top: 5px solid #7be9c2;
-  border-bottom: 5px solid #7be9c2;
-}
-
 .project-reference {
   display: flex;
   justify-content: space-evenly;
@@ -46,6 +29,49 @@ mat-card-title {
 
 .right {
   padding-right: 8%;
+}
+
+/* image hover */
+
+.image-card {
+  position: relative;
+  width: 50%;
+  max-width: 350px;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #7be9c2;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.image-card:hover .overlay {
+  width: 100%;
+}
+
+.img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+  text-align: center;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

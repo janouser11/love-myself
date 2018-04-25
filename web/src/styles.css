@@ -54,6 +54,23 @@ html {
   padding-top: 20px;
 }
 
+.img-text {
+  color: #eef4f3;
+  font-size: 20px;
+  font-family: 'PT Serif', serif;
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.img-text-body {
+  color: #eef4f3;
+  font-size: 15px;
+  font-family: 'PT Serif', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
 mat-card {
   box-shadow: none !important;
   background: #eef4f3;
