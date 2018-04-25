@@ -7,12 +7,12 @@
   justify-content: space-evenly;
 }
 
-.general mat-card-content {
+.left-container mat-card-content {
   margin-left: 200px !important;
   margin-right: 50px !important;
 }
 
-.ambitious mat-card-content {
+.right-container mat-card-content {
   margin-left: 50px !important;
   margin-right: 200px !important;
 }
@@ -76,6 +76,7 @@
   display: flex;
   justify-content: space-evenly;
   background: none;
+  margin-top: 60px;
   /* padding-top: 100px;
   padding-bottom: 200px; */
 }
@@ -84,4 +85,15 @@
   height: calc(100vh - 24px);
   align-items: center;
   justify-content: center;
+}
+
+.grouping {
+  display: flex;
+  justify-content: space-around;
+}
+
+.grouping mat-card-content {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
 }
