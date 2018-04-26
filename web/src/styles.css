@@ -46,7 +46,7 @@ html {
 }
 
 .body-text {
-  color: #606060;
+  color: #2c2e2e;
   font-size: 15px;
   font-family: 'PT Serif', serif;
   font-style: normal;
@@ -60,7 +60,6 @@ html {
   font-family: 'PT Serif', serif;
   font-style: normal;
   font-weight: 400;
-  padding-top: 20px;
 }
 
 .img-text-body {

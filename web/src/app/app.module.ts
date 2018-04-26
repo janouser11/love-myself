@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/pages/home/home.component';
-import { MissionComponent } from './components/pages/mission/mission.component';
 import { DocumentationComponent } from './components/pages/documentation/documentation.component';
 import { ResearchComponent } from './components/pages/research/research.component';
 import { DevelopmentComponent } from './components/pages/development/development.component';
@@ -20,7 +19,6 @@ import { MatCardModule } from '@angular/material';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'mission', component: MissionComponent },
   { path: 'documentation', component: DocumentationComponent },
   { path: 'research', component: ResearchComponent },
   { path: 'development', component: DevelopmentComponent },
@@ -33,7 +31,6 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    MissionComponent,
     DocumentationComponent,
     ResearchComponent,
     DevelopmentComponent,

@@ -57,7 +57,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #7be9c2;
+  background-color: #facc7a;
   overflow: hidden;
   width: 0;
   height: 100%;
@@ -69,7 +69,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #7be9c2;
+  background-color: #7aa8fa;
   opacity: .99;
   overflow: hidden;
   width: 0;
@@ -81,8 +81,20 @@ a {
   width: 100%;
 }
 
+.image-card:hover .img-text {
+  transition: .45s ease-in;
+  transition-delay: .1s;
+  opacity: 1;
+}
+
 .tanabata:hover .tanabata-overlay {
   width: 50%;
+}
+
+.tanabata:hover .tanabata-text {
+  transition: .45s ease-in;
+  transition-delay: .2s;
+  opacity: 1;
 }
 
 .img-text {
@@ -94,10 +106,11 @@ a {
   -ms-transform: translate(-50%, -50%);
   white-space: nowrap;
   text-align: center;
+  opacity: 0;
 }
 
 .tanabata-text {
-  color: #606060;
+  color: #eef4f3;
   font-size: 15px;
   font-family: 'PT Serif', serif;
   font-style: normal;
@@ -109,6 +122,7 @@ a {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: left;
+  opacity: 0;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
