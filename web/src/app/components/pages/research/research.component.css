@@ -22,11 +22,6 @@ a {
   padding-left: 8%;
 }
 
-.tanabata {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .right {
   padding-right: 8%;
 }
@@ -37,6 +32,15 @@ a {
   position: relative;
   width: 50%;
   max-width: 350px;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.tanabata {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
   padding-bottom: 0px !important;
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -60,18 +64,51 @@ a {
   transition: .5s ease;
 }
 
+.tanabata-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #7be9c2;
+  opacity: .99;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
 .image-card:hover .overlay {
   width: 100%;
 }
 
+.tanabata:hover .tanabata-overlay {
+  width: 50%;
+}
+
 .img-text {
   position: absolute;
+  margin: 0 auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   white-space: nowrap;
   text-align: center;
+}
+
+.tanabata-text {
+  color: #606060;
+  font-size: 15px;
+  font-family: 'PT Serif', serif;
+  font-style: normal;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: -20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
