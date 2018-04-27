@@ -1,0 +1,87 @@
+[debug] [2018-04-27T07:10:51.873Z] ----------------------------------------------------------------------
+[debug] [2018-04-27T07:10:51.875Z] Command:       /Users/rachellucas/.nvm/versions/node/v9.2.0/bin/node /Users/rachellucas/.nvm/versions/node/v9.2.0/bin/firebase deploy
+[debug] [2018-04-27T07:10:51.875Z] CLI Version:   3.17.6
+[debug] [2018-04-27T07:10:51.875Z] Platform:      darwin
+[debug] [2018-04-27T07:10:51.876Z] Node Version:  v9.2.0
+[debug] [2018-04-27T07:10:51.876Z] Time:          Fri Apr 27 2018 03:10:51 GMT-0400 (EDT)
+[debug] [2018-04-27T07:10:51.876Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-27T07:10:51.888Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-27T07:10:51.889Z] > authorizing via signed-in user
+[debug] [2018-04-27T07:10:51.890Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-04-27T07:10:51.891Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/ka0JVEriGYdRrbklvkQqaBEkHYhBb-1302C91v4YW5I',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Apr 27 2018 03:10:51 GMT-0400 (EDT)
+[debug] [2018-04-27T07:10:52.103Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-27T07:10:52.119Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/love-myself-project  
+  
+ Fri Apr 27 2018 03:10:52 GMT-0400 (EDT)
+[debug] [2018-04-27T07:10:52.558Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-27T07:10:52.559Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/love-myself-project/tokens  
+  
+ Fri Apr 27 2018 03:10:52 GMT-0400 (EDT)
+[debug] [2018-04-27T07:10:52.893Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'love-myself-project'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing dist directory for upload...
+[debug] [2018-04-27T07:11:01.318Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/love-myself-project/uploads/-LB4wAnoG1FNlKHA8Z60?fileCount=103&message=  
+  
+ Fri Apr 27 2018 03:11:01 GMT-0400 (EDT)
+[debug] [2018-04-27T07:15:13.622Z] ----------------------------------------------------------------------
+[debug] [2018-04-27T07:15:13.624Z] Command:       /Users/rachellucas/.nvm/versions/node/v9.2.0/bin/node /Users/rachellucas/.nvm/versions/node/v9.2.0/bin/firebase deploy
+[debug] [2018-04-27T07:15:13.624Z] CLI Version:   3.17.6
+[debug] [2018-04-27T07:15:13.624Z] Platform:      darwin
+[debug] [2018-04-27T07:15:13.624Z] Node Version:  v9.2.0
+[debug] [2018-04-27T07:15:13.625Z] Time:          Fri Apr 27 2018 03:15:13 GMT-0400 (EDT)
+[debug] [2018-04-27T07:15:13.625Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-27T07:15:13.635Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-27T07:15:13.635Z] > authorizing via signed-in user
+[debug] [2018-04-27T07:15:13.637Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/love-myself-project  
+  
+ Fri Apr 27 2018 03:15:13 GMT-0400 (EDT)
+[debug] [2018-04-27T07:15:14.018Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-27T07:15:14.019Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/love-myself-project/tokens  
+  
+ Fri Apr 27 2018 03:15:14 GMT-0400 (EDT)
+[debug] [2018-04-27T07:15:14.380Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'love-myself-project'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing dist directory for upload...
+[debug] [2018-04-27T07:15:22.768Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/love-myself-project/uploads/-LB4xAd3-IRBhM4yHLQe?fileCount=103&message=  
+  
+ Fri Apr 27 2018 03:15:22 GMT-0400 (EDT)
+[debug] [2018-04-27T07:17:27.806Z] ----------------------------------------------------------------------
+[debug] [2018-04-27T07:17:27.808Z] Command:       /Users/rachellucas/.nvm/versions/node/v9.2.0/bin/node /Users/rachellucas/.nvm/versions/node/v9.2.0/bin/firebase deploy
+[debug] [2018-04-27T07:17:27.808Z] CLI Version:   3.17.6
+[debug] [2018-04-27T07:17:27.808Z] Platform:      darwin
+[debug] [2018-04-27T07:17:27.808Z] Node Version:  v9.2.0
+[debug] [2018-04-27T07:17:27.809Z] Time:          Fri Apr 27 2018 03:17:27 GMT-0400 (EDT)
+[debug] [2018-04-27T07:17:27.809Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-27T07:17:27.818Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-27T07:17:27.819Z] > authorizing via signed-in user
+[debug] [2018-04-27T07:17:27.821Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/love-myself-project  
+  
+ Fri Apr 27 2018 03:17:27 GMT-0400 (EDT)
+[debug] [2018-04-27T07:17:28.307Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-27T07:17:28.308Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/love-myself-project/tokens  
+  
+ Fri Apr 27 2018 03:17:28 GMT-0400 (EDT)
+[debug] [2018-04-27T07:17:29.114Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'love-myself-project'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing dist directory for upload...
+[debug] [2018-04-27T07:17:37.556Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/love-myself-project/uploads/-LB4xgY-46nTNR2YvqJq?fileCount=103&message=  
+  
+ Fri Apr 27 2018 03:17:37 GMT-0400 (EDT)
