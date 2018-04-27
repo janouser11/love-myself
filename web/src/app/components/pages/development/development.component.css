@@ -2,12 +2,56 @@
   margin-top: 80px;
 }
 
+.blue {
+  width: 50px;
+  height: 25px;
+  border-radius: 0%;
+  font-size: 15px;
+  color: #2c2e2e;
+  line-height: 50px;
+  text-align: center;
+  background: #7be9c2;
+}
+
+.yellow {
+  width: 50px;
+  height: 25px;
+  border-radius: 0%;
+  font-size: 15px;
+  color: #2c2e2e;
+  line-height: 50px;
+  text-align: center;
+  background: #facc7a;
+}
+
+.key mat-card {
+  display: flex;
+  justify-content: center;
+  background: none;
+  margin-top: 60px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.left mat-card-content {
+  margin-left: 0;
+  margin-right: 200px;
+  vertical-align: center;
+}
+
+.right mat-card-content {
+  margin-left: 200px;
+  margin-right: 0;
+  vertical-align: center;
+}
+
+/* 
 .lists {
   display: flex;
   justify-content: space-evenly;
-}
+} */
 
-.left-container mat-card-content {
+/* .left-container mat-card-content {
   margin-left: 200px !important;
   margin-right: 50px !important;
 }
@@ -15,7 +59,7 @@
 .right-container mat-card-content {
   margin-left: 50px !important;
   margin-right: 200px !important;
-}
+} */
 
 /* campus partners */
 
@@ -41,9 +85,45 @@
   transition: .5s ease;
 }
 
+.overlay-blue {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #7be9c2;
+  opacity: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.overlay-yellow {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #facc7a;
+  opacity: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+}
+
 .image-card:hover .overlay {
   bottom: 0;
   height: 100%;
+}
+
+.image-card:hover .overlay-blue {
+  opacity: .3;
+}
+
+.image-card:hover .overlay-yellow {
+  opacity: .3;
 }
 
 .img-text {
@@ -78,6 +158,39 @@
 .image-card2 {
   padding-left: 50px;
   padding-right: 200px;
+}
+
+.container {
+  height: calc(100vh - 24px);
+  align-items: center;
+  justify-content: center;
+}
+
+.grouping {
+  display: flex;
+  justify-content: center;
+}
+
+.grouping mat-card {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.body-text mat-card-content {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.icon img.mat-card-image {
+  width: 30%;
+  margin-top: 50px;
+}
+
+.icon mat-card-content {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 100px;
 }
 
 /* .circle-a {
@@ -143,20 +256,3 @@
   /* padding-top: 100px;
   padding-bottom: 200px;
 }*/
-
-.container {
-  height: calc(100vh - 24px);
-  align-items: center;
-  justify-content: center;
-}
-
-.grouping {
-  display: flex;
-  justify-content: center;
-}
-
-.grouping mat-card {
-  margin-left: 100px;
-  margin-right: 100px;
-  text-align: center;
-}
