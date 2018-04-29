@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxCarousel } from 'ngx-carousel';
+import { $ } from 'protractor';
 
 @Component({
   selector: 'app-home',
@@ -19,6 +20,20 @@ export class HomeComponent implements OnInit {
   constructor() {
     this.innerWidth = (window.screen.width);
   }
+
+  loading: boolean = true;
+  isColumn1Loaded: boolean = false;
+  isColumn2Loaded: boolean = false;
+  isColumn3Loaded: boolean = false;
+  isColumn4Loaded: boolean = false;
+
+  columnOneImages: any = ["assets/photos/2.jpg", "assets/photos/5.jpg"]
+
+  columnTwoImages: any = ["assets/photos/7.jpg", "assets/photos/12.jpg"]
+
+  columnThreeImages: any = ["assets/photos/16.jpg", "assets/photos/15.jpg"]
+
+  columnFourImages: any = ["assets/photos/9.jpg", "assets/photos/31.jpg"]
 
   onResize(event) {
     this.determineCarouselBannerItems(event.target.innerWidth);
@@ -87,6 +102,41 @@ export class HomeComponent implements OnInit {
         'assets/images/believing.svg',
         'assets/images/encouraging.svg',
         'assets/images/expressing.svg']
+    }
+  }
+
+  onLoad() {
+    this.loading = false;
+  }
+
+  loaded(columnNumber: number) {
+
+
+    switch (columnNumber) {
+      case 1: {
+        this.isColumn1Loaded = true;
+        break;
+      }
+      case 2: {
+        this.isColumn2Loaded = true;
+        break;
+      }
+      case 3: {
+        this.isColumn3Loaded = true;
+        break;
+      }
+      case 4: {
+        this.isColumn4Loaded = true;
+        break;
+      }
+      default: {
+        console.log("Error")
+        break;
+      }
+    }
+
+    if (this.isColumn1Loaded && this.isColumn2Loaded && this.isColumn3Loaded && this.isColumn4Loaded) {
+      this.loading = false;
     }
   }
 

@@ -61,8 +61,66 @@
         <img src="./../../../../assets/images/arrow-forward.svg" alt="r-arrow" class="arrow">
       </button>
     </ngx-carousel>
-
   </div>
 
+  <div class="documentation-container">
+    <div class="divider">
+      <span class="divider-text">
+        INSTALLATION
+      </span>
+    </div>
+
+    <div class="row">
+
+      <div class="column column1">
+        <img src='{{imagePath}}' *ngFor="let imagePath of columnOneImages" [hidden]="loading" (load)="loaded(1)" #column1>
+      </div>
+      <div class="column column2">
+        <img src='{{imagePath}}' *ngFor="let imagePath of columnTwoImages" [hidden]="loading" (load)="loaded(2)">
+      </div>
+      <div class="column column3">
+        <img src='{{imagePath}}' *ngFor="let imagePath of columnThreeImages" [hidden]="loading" (load)="loaded(3)">
+      </div>
+      <div class="column column4">
+        <img src='{{imagePath}}' *ngFor="let imagePath of columnFourImages" [hidden]="loading" (load)="loaded(4)">
+      </div>
+    </div>
+
+    <div class="view">
+      <a routerLink="/documentation" routerLinkActive="active">VIEW MORE
+        <img src="assets/images/arrow-forward.svg" alt="next" class="next">
+      </a>
+    </div>
+  </div>
+
+  <div class="research-container">
+    <div class="divider">
+      <span class="divider-text">
+        REFLECTION
+      </span>
+    </div>
+
+    <mat-card>
+      <div class="body-text">
+        <mat-card-content>
+          <p>
+            <p>
+              In the end we felt as though the essence of this project was a success. There were parts that we felt could have had more
+              improvement had we had the time such as the social media accounts, and participations from campus organizations.
+              The turn out for the installation and those who participated in it was beyond successful in our eyes, we reached
+              over 100 people a day. It is hard to measure the full impact that we made although people's reactions were
+              encouraging. If this project were to continue it would be best to have this become a reoccurring installation
+              that came back every month or every few months.
+              <br>
+              <br>The steps that we had to go through with the VCU administration was a little more intense than we expected.
+              We sometimes found it difficult to meet with people, and eventually just began showing up and reaching out
+              to everyone that we could in order to schedule meetings. If we could change anything it would be the marketing
+              leading up to the event. We should have been marketing long before and finding other student organizations
+              to participate with us.
+            </p>
+        </mat-card-content>
+      </div>
+    </mat-card>
+  </div>
 
 </app-standard-component>
