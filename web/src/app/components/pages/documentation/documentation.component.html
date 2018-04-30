@@ -1,4 +1,7 @@
-<app-standard-component>
+<ng4-loading-spinner> </ng4-loading-spinner>
+
+<!-- <ng-container [hidden]="!isPageHidden"> -->
+<app-standard-component [hidden]="isPageHidden">
 
   <div class="documentation-container">
     <div class="divider">
@@ -15,7 +18,7 @@
             handed out our own personal merchandise as well as items from the organizations that we partnered with. Each
             day we reached over 100 people, several of whom returned each day. We handed out an assortment of deliverables
             given to us by our partners as well as our own personal merchandise.
-            <br>
+            <!-- <br>
             <br>
             <b>Day 1:</b> Green. Accepting yourself. Write something you like about yourself.
             <br>
@@ -25,11 +28,16 @@
             <br>
             <b>Day 4</b> Blue. Encouraging yourself. Write something to encourage yourself.
             <br>
-            <b>Day 5</b> Purple. Expressing yourself. Write one way that you express yourself.
+            <b>Day 5</b> Purple. Expressing yourself. Write one way that you express yourself. -->
           </p>
         </mat-card-content>
       </div>
     </mat-card>
+
+    <div class="timeline">
+      <img src="assets/images/timeline.svg" alt="timeline of project">
+    </div>
+
   </div>
 
   <div class="row">
@@ -48,3 +56,5 @@
     </div>
   </div>
 </app-standard-component>
+
+<!-- </ng-container> -->

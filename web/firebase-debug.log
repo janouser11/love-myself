@@ -1,0 +1,35 @@
+[debug] [2018-04-29T04:36:18.378Z] ----------------------------------------------------------------------
+[debug] [2018-04-29T04:36:18.380Z] Command:       /Users/rachellucas/.nvm/versions/node/v9.2.0/bin/node /Users/rachellucas/.nvm/versions/node/v9.2.0/bin/firebase deploy
+[debug] [2018-04-29T04:36:18.380Z] CLI Version:   3.17.6
+[debug] [2018-04-29T04:36:18.380Z] Platform:      darwin
+[debug] [2018-04-29T04:36:18.380Z] Node Version:  v9.2.0
+[debug] [2018-04-29T04:36:18.381Z] Time:          Sun Apr 29 2018 00:36:18 GMT-0400 (EDT)
+[debug] [2018-04-29T04:36:18.381Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-29T04:36:18.395Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-29T04:36:18.395Z] > authorizing via signed-in user
+[debug] [2018-04-29T04:36:18.397Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-04-29T04:36:18.397Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/ka0JVEriGYdRrbklvkQqaBEkHYhBb-1302C91v4YW5I',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Apr 29 2018 00:36:18 GMT-0400 (EDT)
+[debug] [2018-04-29T04:36:18.617Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-29T04:36:18.633Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/love-myself-project  
+  
+ Sun Apr 29 2018 00:36:18 GMT-0400 (EDT)
+[debug] [2018-04-29T04:36:19.142Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-29T04:36:19.143Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/love-myself-project/tokens  
+  
+ Sun Apr 29 2018 00:36:19 GMT-0400 (EDT)
+[debug] [2018-04-29T04:36:19.707Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'love-myself-project'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing dist directory for upload...
+[debug] [2018-04-29T04:36:28.106Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/love-myself-project/uploads/-LBEfzLSNi6UU3gvNUiq?fileCount=107&message=  
+  
+ Sun Apr 29 2018 00:36:28 GMT-0400 (EDT)

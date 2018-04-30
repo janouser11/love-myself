@@ -53,7 +53,7 @@ export class HomeComponent implements OnInit {
           .ngxcarouselPoint {
             list-style-type: none;
             text-align: center;
-            padding: 12px;
+            padding: 0px;
             margin: 0;
             white-space: nowrap;
             overflow: auto;

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { $ } from 'protractor';
+import { Ng4LoadingSpinnerService } from 'ng4-loading-spinner';
+
 
 @Component({
   selector: 'app-documentation',
@@ -8,12 +10,14 @@ import { $ } from 'protractor';
 })
 export class DocumentationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private spinnerService: Ng4LoadingSpinnerService) { }
   loading: boolean = true;
+  isPageHidden: boolean = true;
   isColumn1Loaded: boolean = false;
   isColumn2Loaded: boolean = false;
   isColumn3Loaded: boolean = false;
   isColumn4Loaded: boolean = false;
+
 
   columnOneImages: any = ["assets/photos/1.jpg", "assets/photos/5.jpg",
     "assets/photos/9.jpg", "assets/photos/13.jpg", "assets/photos/17.jpg",
@@ -36,6 +40,21 @@ export class DocumentationComponent implements OnInit {
     "assets/photos/36.jpg", "assets/photos/40.jpg"]
 
   ngOnInit() {
+    console.log("starting loading");
+    this.spinnerService.show();
+  }
+
+  async ngAfterViewInit() {
+
+    await this.delay(2000);
+    this.isPageHidden = false;
+    this.spinnerService.hide();
+    console.log("ending loading");
+  }
+
+
+  delay(ms: number) {
+    return new Promise(resolve => setTimeout(resolve, ms));
   }
 
   onLoad() {
@@ -70,6 +89,7 @@ export class DocumentationComponent implements OnInit {
 
     if (this.isColumn1Loaded && this.isColumn2Loaded && this.isColumn3Loaded && this.isColumn4Loaded) {
       this.loading = false;
+
     }
   }
 }

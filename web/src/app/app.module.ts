@@ -16,6 +16,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
 import { MatCardModule } from '@angular/material';
+import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -45,6 +46,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     NoopAnimationsModule,
     NgxCarouselModule,
+    Ng4LoadingSpinnerModule.forRoot(),
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only

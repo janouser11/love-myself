@@ -135,26 +135,47 @@
   justify-content: space-evenly;
 }
 
+.ideation mat-card-content {
+  margin-left: 200px;
+  margin-right: 10%;
+}
+
 .drafts {
   width: 80%;
-  margin-right: 200px;
 }
 
 .brand {
-  margin-top: 80px;
   margin-bottom: 40px;
   display: flex;
 }
 
 .brand-colors {
-  width: 50%;
+  display: flex;
+  width: 70%;
   padding-top: 40px;
-  margin-left: 200px;
+  margin: 0 auto;
 }
 
 .final {
   width: 80%;
-  margin-left: 200px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.container-green {
+  margin-top: 80px;
+  height: calc(100vh - 24px);
+  align-items: center;
+  justify-content: center;
+  background-color: #7be9c2;
+}
+
+.banner-logo {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 /* beginning stages */
@@ -209,11 +230,6 @@
   text-align: center;
 }
 
-/* .body-text mat-card-content {
-  margin-left: 0px;
-  margin-right: 0px;
-} */
-
 .icon img.mat-card-image {
   width: 30%;
   margin-top: 50px;
@@ -223,4 +239,28 @@
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 100px;
+}
+
+/* final project link button */
+
+a {
+  text-decoration: none;
+  color: #2c2e2e;
+}
+
+.next {
+  width: 30px;
+  vertical-align: middle;
+  padding-right: 20px;
+}
+
+.wrapper {
+  text-align: center;
+  font-size: 15px;
+  color: #2c2e2e;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
