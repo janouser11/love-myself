@@ -40,7 +40,6 @@ export class DocumentationComponent implements OnInit {
     "assets/photos/36.jpg", "assets/photos/40.jpg"]
 
   ngOnInit() {
-    console.log("starting loading");
     this.spinnerService.show();
   }
 
@@ -49,7 +48,6 @@ export class DocumentationComponent implements OnInit {
     await this.delay(2000);
     this.isPageHidden = false;
     this.spinnerService.hide();
-    console.log("ending loading");
   }
 
 
