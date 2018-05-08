@@ -134,9 +134,9 @@ a {
     margin-top: 50px;
   }
   .body-text {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 0px;
     font-size: 12px;
   }
   .logo-header-horizontal {
@@ -144,8 +144,9 @@ a {
   }
   .logo-header-vertical {
     display: block;
-    width: 100%;
-    padding-top: 40px;
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 200px;
   }
   .bannerStyle {
     background-size: cover !important;
@@ -154,5 +155,10 @@ a {
   }
   .banner {
     padding-bottom: 50px;
+  }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
   }
 }

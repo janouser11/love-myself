@@ -47,6 +47,9 @@ img {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width: 600px) {
+  .documentation-container {
+    margin-top: 100px;
+  }
   .column {
     flex: 100%;
     max-width: 100%;
@@ -58,9 +61,7 @@ img {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .body-text {
-    width: 70%;
     margin: 0 auto;
-    padding-top: 30px;
     font-size: 12px;
   }
 }

@@ -230,6 +230,17 @@
   text-align: center;
 }
 
+.grouping-partners {
+  display: flex;
+  justify-content: center;
+}
+
+.grouping-partners mat-card {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
 .icon img.mat-card-image {
   width: 30%;
   margin-top: 50px;
@@ -263,4 +274,54 @@ a {
   font-weight: 600;
   padding-top: 20px;
   padding-bottom: 40px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .goals-container {
+    margin-top: 100px;
+  }
+  .key mat-card-content {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  /*icons*/
+  .icon img.mat-card-image {
+    width: 60%;
+    margin-top: 50px;
+  }
+  .icon mat-card-content {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  /*concepts*/
+  .concept-two {
+    display: block;
+    justify-content: center;
+  }
+  .concept-two mat-card-content {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .image-card1 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .image-card2 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .image-card {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  /*brand*/
+  .ideation {
+    display: block;
+    justify-content: center;
+  }
+  .ideation mat-card-content {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
